@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="./img/favicon.png" />
+    <title>Landing</title>
+
+    <!-- Font Montserrat-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,800i,900&display=swap" rel="stylesheet">
+
+    <!-- Link al foglio di stile-->
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <section class="header" style="padding-right: 0; padding-left: 0;">
+      <!-- <img src="img/header-0.jpg" class="img-fluid" alt="header" style="width: 100%; height: 100%;"> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-12 logo-div">
+            <img class="logo img-fluid" src="img/kang-logo-white.png" alt="header-logo">
+          </div>
+          <div class="col-lg-4 col-sm-12 d-flex align-items-center frase-div">
+            <img class="frase-header img-fluid" src="img/header-frase.png" alt="header-frase">
+          </div>
+          <div class="col-lg-4 col-sm-12 div-form" style="background: #f1f1f1; box-shadow: 0px 5px 10px 0px #000000;">
+            <h2 class="text-center my-4" style="text-transform: uppercase; font-weight: bold; color: #7f7f7f;">iscriviti al portale</h2>
+            <form action="proviamo.php" method="post">
+              <div class="form-group">
+                <label for="InputNickname">Nickname*</label>
+                <input type="text" class="form-control" name="nickname" required>
+              </div>
+              <div class="form-group">
+                <label for="InputEmail">Indirizzo email*</label>
+                <input type="email" class="form-control" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="InputPassword">Password*</label>
+                <input type="password" class="form-control" name="password" required>
+              </div>
+              <div class="form-group">
+                <label for="InputTel">Telefono (facoltativo)</label>
+                <input type="tel" class="form-control" name="telefono">
+              </div>
+              <div class="form-group">
+                <label style="margin-top: 0.5rem;" for="InputData">Data di nascita</label><span class="float-right">
+                <input type="number" min="1" max="31" class="form-control" name="giorno" placeholder="gg*" style="width: 70px; display: inline-block;" required>
+                <input type="number" min="1" max="12" class="form-control" name="mese" placeholder="mm*" style="width: 70px; display: inline-block;" required>
+                <input type="number" min="1920" max="2019" class="form-control" id="anno" placeholder="aaaa*" style="width: 90px; display: inline-block;" required>
+              </div>
+              <label><input type="checkbox" name="checkbox1" required><span></span> Accetto di ricevere email da parte di Kang (riduzioni tariffarie, ripristino della password, promozione, comunicazioni con i Master...).</label>
+              <label><input type="checkbox" name="checkbox2" required><span></span> Ho letto e accetto le condizioni generali</label>
+              <div class="d-flex justify-content-center">
+                <input type="submit" value="ISCRIVITI ORA" class="my-3 btn btn-primary">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION VANTAGGI -->
+    <section class="vantaggi">
+      <div class="container py-5">
+        <div class="row" style="width: 708px;">
+          <h2 style="text-transform: uppercase; font-size: 30px">i vantaggi per te</h2>
+          <p style="font-size: 14px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-4">
+              <div class="row my-4">
+                <div class="col d-flex align-items-center justify-content-center">
+                  <img src="img/prezzo-certo.png" alt="prezzo-certo">
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                  <h3>prezzo certo</h3>
+                </div>
+              </div>
+            </div><!-- fine colonna 1/3 -->
+            <div class="col-12 col-lg-4">
+              <div class="row my-4">
+                <div class="col d-flex align-items-center justify-content-center">
+                  <img src="img/tempistiche-certe.png" alt="tempistiche-certe">
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                  <h3>tempistiche certe</h3>
+                </div>
+              </div>
+            </div><!-- fine colonna 2/3 -->
+            <div class="col-12 col-lg-4">
+              <div class="row my-4">
+                <div class="col d-flex align-items-center justify-content-center">
+                  <img src="img/attivo-24h.png" alt="attivo-24h">
+                </div>
+                <div class="col d-flex align-items-center justify-content-center">
+                  <h3>attivo 24h su 24h</h3>
+                </div>
+              </div>
+            </div><!-- fine colonna 3/3 -->
+          </div>
+        </div>
+      </div><!-- .container -->
+    </section><!-- .vantaggi -->
+
+    <!-- SECTION SERVIZI -->
+    <section class="servizi">
+      <div class="container py-5">
+        <h2 class="mb-4">i nostri servizi</h2>
+        <p>La condivisione è sempre esistita sotto forma di solidarietà di prossimità e il ritorno di questo bisogno si sincronizza oggi con l'era del web 2.0.
+Il desiderio dei consumatori di interagire e di condividere l'utilizzo dei beni e dei servizi rappresenta un movimento di fondo.</p>
+        <p>La sharing economy diventa un’opportunità di crescita economica e di progresso sociale.</p>
+      </div>
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col">
+            <img class="mb-3 rounded mx-auto d-block" src="img/grafica.png" alt="grafica">
+            <h3 class="text-center">grafica</h3>
+          </div>
+          <div class="col">
+            <img class="mb-3 rounded mx-auto d-block" src="img/webmarketing.png" alt="webmarketing">
+            <h3 class="text-center">web marketing</h3>
+          </div>
+          <div class="col">
+            <img class="mb-3 rounded mx-auto d-block" src="img/siti-internet.png" alt="siti-internet">
+            <h3 class="text-center">siti internet</h3>
+          </div>
+          <div class="col">
+            <img class="mb-3 rounded mx-auto d-block" src="img/traduzione.png" alt="traduzione">
+            <h3 class="text-center">traduzione</h3>
+          </div>
+          <div class="col">
+            <img class="mb-3 rounded mx-auto d-block" src="img/video-editing.png" alt="video-editing">
+            <h3 class="text-center">video editing</h3>
+          </div>
+          <div class="col">
+            <img class="mb-3 rounded mx-auto d-block" src="img/audio-e-doppiaggio.png" alt="audio-e-doppiaggio">
+            <h3 class="text-center">audio&dopp.</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHI E' -->
+    <section class="chisiamo">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col">
+            <h2 class="mb-4">chi è kang?</h2>
+            <p>Nata nel febbraio 2014, Kang è una piattaforma di economia collaborativa (sul modello della sharing economi) che propone due tipi di servizi: servizi consulenziali (consulti telefonici e chat con coach, avvocati, veggenti) e prestazioni digitali (freelance nei settori Grafica  - Sito Internet – Webmarketing – Audio e Doppiaggio – Video Animazione – Traduzione).</p>
+          </div>
+          <div class="col d-flex justify-content-center align-items-center">
+            <img src="img/kang-logo-grey.png" alt="logo secondario">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ISCRIVITI -->
+    <section class="iscriviti py-4">
+      <h2 class="text-center">cosa aspetti? iscriviti subito al portale!</h2>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-4">
+      <p class="text-center">Copyright © 2019 Kang</p>
+    </footer>
+
+
+    <!-- jQuery, Popper.js e Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
